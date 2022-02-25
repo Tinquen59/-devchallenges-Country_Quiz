@@ -1,0 +1,18 @@
+// abstract
+@import "./abstract/_fonts.scss";
+@import "./abstract/_variables";
+@import "./abstract/_mixins";
+@import "./abstract/_global";
+
+@import "./_body";
+
+// components
+@import "./components/_cardContainer";
+@import "./components/_loader";
+@import "./components/_gameQuiz";
+@import "./components/_resultGame";
+@import "./components/_button";
+@import "./components/_footer";
+
+// pages
+@import "./pages/_quiz";

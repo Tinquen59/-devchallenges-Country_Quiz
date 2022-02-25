@@ -1,0 +1,18 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.81em;
+    text-align: center;
+    color: $white-color;
+
+    & > p {
+        font-size: 14px;
+
+        & .qa-Footer--link {
+            font-family: "Poppins bold";
+            text-decoration: underline;
+        }
+    }
+}

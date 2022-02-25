@@ -1,0 +1,20 @@
+.qa-Loader {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-top: 6px solid $primary-color;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 0 solid transparent;
+    border-radius: 50%;
+    animation: loader-rotation 1s cubic-bezier(0.19, 1.13, 1, 0.66) infinite;
+}
+
+@keyframes loader-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}

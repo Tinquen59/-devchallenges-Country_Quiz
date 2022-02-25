@@ -1,0 +1,77 @@
+.qa-Button {
+    &__chooseAnswer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0.56em 1.06em;
+        font-size: 18px;
+        text-align: left;
+        color: $secondary-color;
+        background-color: $white-color;
+        border: 2px solid $secondary-color;
+        border-radius: 12px;
+        &:not(:last-of-type) {
+            margin-bottom: 1.39em;
+        }
+        &:not(:disabled) {
+            cursor: pointer;
+
+            &:hover:not(.qa-Button__chooseAnswer--correct),
+            &:hover:not(.qa-Button__chooseAnswer--error) {
+                @include actionBtnColor($white-color, $third-color);
+            }
+        }
+
+        &--correct {
+            @include actionBtnColor($white-color, $success-color);
+        }
+
+        &--error {
+            @include actionBtnColor($white-color, $error-color);
+        }
+
+        &--numbering {
+            padding-right: 1.92em;
+            font-size: 24px;
+            line-height: 1.5em;
+        }
+
+        &--answer {
+            line-height: 1.5em;
+        }
+
+        &--icon {
+            font-size: 20px;
+            width: 1em;
+            border: 2px solid $white-color;
+            border-radius: 50%;
+        }
+    }
+
+    &__primary {
+        padding: 1em 3.39em;
+        font-family: "Poppins semiBold";
+        font-size: 18px;
+        line-height: 1.5em;
+        color: $primary-color;
+        background-color: $white-color;
+        border: 2px solid $primary-color;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    &__third {
+        margin-top: 2.17em;
+        padding: 0.83em 2em;
+        font-family: "Poppins bold";
+        font-size: 18px;
+        line-height: 1.5em;
+        color: $white-color;
+        background-color: $third-color;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
+        cursor: pointer;
+    }
+}

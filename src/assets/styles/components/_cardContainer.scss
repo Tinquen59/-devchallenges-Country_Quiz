@@ -1,0 +1,15 @@
+.qa-Card__container {
+    position: relative;
+    width: 464px;
+    padding: 1.89em 0.89em;
+    background-color: $white-color;
+    border-radius: 24px;
+
+    &--action {
+        padding-bottom: 0.89em;
+    }
+
+    &--endGame {
+        padding-top: 0.89em;
+    }
+}
