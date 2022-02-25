@@ -57,6 +57,12 @@ body {
   padding-top: 0.89em;
 }
 
+@media screen and (max-width: 500px) {
+  .qa-Card__container {
+    width: 100%;
+  }
+}
+
 .qa-Loader {
   margin: auto;
   width: 80px;
@@ -99,6 +105,12 @@ body {
 
 .qa-GameQuiz__rightBtn {
   text-align: right;
+}
+
+@media screen and (max-width: 425px) {
+  .qa-GameQuiz--imgAdventure {
+    display: none;
+  }
 }
 
 .qa-resultQuiz__container {
@@ -252,5 +264,11 @@ footer > p .qa-Footer--link {
   line-height: 54px;
   color: #fff;
   margin-bottom: 0.28em;
+}
+
+@media screen and (max-width: 500px) {
+  .qa-Quiz__center {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

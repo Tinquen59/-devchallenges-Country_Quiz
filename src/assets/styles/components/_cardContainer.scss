@@ -13,3 +13,9 @@
         padding-top: 0.89em;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .qa-Card__container {
+        width: 100%;
+    }
+}

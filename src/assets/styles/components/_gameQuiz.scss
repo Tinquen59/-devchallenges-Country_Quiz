@@ -22,3 +22,9 @@
         text-align: right;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .qa-GameQuiz--imgAdventure {
+        display: none;
+    }
+}

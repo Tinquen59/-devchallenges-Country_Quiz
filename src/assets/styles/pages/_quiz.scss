@@ -8,18 +8,22 @@
         background-size: cover;
     }
 
-    &-Quiz__ {
-        &center {
-            margin-top: 5.2em;
-            margin-bottom: 2em;
+    &-Quiz__center {
+        margin-top: 5.2em;
+        margin-bottom: 2em;
 
-            &--title {
-                font-family: "Poppins bold";
-                font-size: 36px;
-                line-height: 54px;
-                color: $white-color;
-                margin-bottom: 0.28em;
-            }
+        &--title {
+            font-family: "Poppins bold";
+            font-size: 36px;
+            line-height: 54px;
+            color: $white-color;
+            margin-bottom: 0.28em;
         }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .qa-Quiz__center {
+        width: 90%;
     }
 }
